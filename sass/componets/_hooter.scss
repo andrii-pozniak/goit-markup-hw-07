@@ -24,8 +24,7 @@
         &:hover, &:focus {
             color: $primery-text-color;
         }
-    }
-    
+    }    
     &-text {
         display: flex;
         margin-top: 0;
@@ -100,6 +99,6 @@
 .icon-svg {
     width: 20px;
     height: 20px;
-
+    
     fill: $white-color;
 }
