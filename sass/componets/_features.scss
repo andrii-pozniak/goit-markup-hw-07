@@ -29,9 +29,13 @@
         
         border: 0;
         color: $title-color;
+       
     }
 
 }
+ .features-icon:hover {
+     fill: $acsent-color;
+ }
 .features-item+.features-item {
     margin-left: 30px;
 }
