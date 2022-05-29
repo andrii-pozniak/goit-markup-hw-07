@@ -21,13 +21,11 @@
         text-decoration: none;
         
         color: $white-color;
-        &:hover {
+        &:hover, &:focus {
             color: $primery-text-color;
         }
     }
-    &-adress {
-
-    }
+    
     &-text {
         display: flex;
         margin-top: 0;
@@ -43,10 +41,8 @@
     &-item {
         display: block;
         margin-bottom: 9px;
-        &:last-child {
-            
-            margin-bottom: 0;
-                
+        &:last-child {            
+            margin-bottom: 0;                
         }
     }
     &-a {
@@ -58,9 +54,13 @@
         text-decoration: none;
         
         color: rgba(255, 255, 255, 0.6);
-        &:hover; &:focus {
+        &:hover,
+        &:focus {
             color: $acsent-color;
         }
+    } 
+    &-icon {
+        margin-left: 70px;
     }
     &-title {
         margin-top: 0;
@@ -75,41 +75,31 @@
         
         color: $white-color;
     }
-    &-icon {
+    &-list {
         display: flex;
-    }
-    &-svg {
-        width: 20px;
-        height: 20px;
-        
-        fill: $white-color;
-    }
+    }            
 }
-.li {
-    &-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-color 250ms var(--timing-function);
-        
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        fill: $white-color;
-    }
-}
-.adress-container {
-    margin-left: 70px;
-}
-.icon-container {
-    margin-left: 70px;
-}
-
-.hooter-icon {
-    display: flex;
-}
-
-.li-icon+.li-icon {
+.hooter-li+.hooter-li {
     margin-left: 10px;
+}
+.icon-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms $timing-function;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $white-color;
+    &:hover, &:focus {
+        background-color: $acsent-color;
+    }
+}
+.icon-svg {
+    width: 20px;
+    height: 20px;
+
+    fill: $white-color;
 }

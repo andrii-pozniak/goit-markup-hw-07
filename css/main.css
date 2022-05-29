@@ -551,8 +551,8 @@ body {
 .customer-svg {
   width: 106px;
   max-height: 60px;
-  -webkit-transition: fill 250ms .customer-svg timing-function;
-  transition: fill 250ms .customer-svg timing-function;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #AFB1B8;
 }
 
@@ -593,7 +593,7 @@ body {
   color: #FFFF;
 }
 
-.hooter-logo:hover {
+.hooter-logo:hover, .hooter-logo:focus {
   color: #757575;
 }
 
@@ -630,6 +630,14 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.hooter-a:hover, .hooter-a:focus {
+  color: #2196F3;
+}
+
+.hooter-icon {
+  margin-left: 70px;
+}
+
 .hooter-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -642,22 +650,46 @@ body {
   color: #FFFF;
 }
 
-.hooter-icon {
+.hooter-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.hooter-svg {
+.hooter-li + .hooter-li {
+  margin-left: 10px;
+}
+
+.icon-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #FFFF;
+}
+
+.icon-logo:hover, .icon-logo:focus {
+  background-color: #2196F3;
+}
+
+.icon-svg {
   width: 20px;
   height: 20px;
   fill: #FFFF;
 }
 
-.adress-container {
-  margin-left: 70px;
-}
-
+/*@import "./componets/icon-hooter";*/
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
