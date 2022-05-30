@@ -773,7 +773,7 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.hero-backdrop .is-hidden {
+.hero-backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -829,7 +829,21 @@ body {
   border-radius: 4px;
 }
 
+.modal-input:hover, .modal-input:focus {
+  border: 1px solid #2196F3;
+}
+
 .modal-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.modal-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-card {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -850,6 +864,7 @@ body {
   height: 120px;
   font-weight: 400;
   padding: 12px 16px;
+  margin-bottom: 20px;
   outline: none;
   font-weight: 400;
   font-size: 12px;
@@ -858,6 +873,11 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-coment:hover, .modal-coment:focus {
+  border-color: #2196F3;
+  color: #212121;
 }
 
 .button-modal {
@@ -903,5 +923,61 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.checkbox-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15px;
+  height: 16px;
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox-item {
+  color: #2196F3;
+}
+
+.modal-input:focus + .modal-card {
+  fill: #2196F3;
+}
+
+.checkbox:checked + .checkbox-icon {
+  display: inline;
+  background-color: #2196F3;
+  background-image: url(../img/check.svg);
+  border: 0;
 }
 /*# sourceMappingURL=main.css.map */
