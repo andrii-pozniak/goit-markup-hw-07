@@ -10,7 +10,6 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     &-container {
-        
         display: flex;
         align-items: center;
     }    
@@ -19,11 +18,11 @@
     display: flex;
     align-items: center;
     &-site {
-        display: none;
+        display: flex;
         margin-left: 93px;
     }
     &-auto {
-     display: none;
+     display: flex;
      margin-left: auto;      
 
     }   
